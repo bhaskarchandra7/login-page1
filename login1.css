@@ -1,0 +1,150 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0c1022;
+    min-height: 600px;
+}
+.loginbox{
+    position: relative;
+    width: 400px;
+    height: 470px;
+    border-radius: 5px;
+    background: rgb(63, 63, 60);
+    overflow: hidden;
+}
+.loginbox::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 400px;
+    height: 470px;
+    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 5s linear infinite;
+}
+
+.loginbox::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 400px;
+    height: 470px;
+    background: linear-gradient(0deg,transparent,transparent,#da26ad,#da26ad,#da26ad);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 5s linear infinite;
+    animation-delay: -3.75s;
+
+}
+.borderline{
+    position: absolute;
+    top: 0;
+    inset: 0;
+
+}
+
+
+.borderline::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 400px;
+    height: 470px;
+    background: linear-gradient(0deg,transparent,transparent,#ff0000,#fd0000,#bb1717);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 5s linear infinite;
+    animation-delay: -2.5s;
+
+}
+
+.borderline::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 400px;
+    height: 470px;
+    background: linear-gradient(0deg,transparent,transparent,#00ff00,#00ff00,#00ff00);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 5s linear infinite;
+    animation-delay: -1.25s;
+
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.loginfrom{
+    position: absolute;
+    inset: 4px;
+    background: #222;
+    padding: 100px 90px;
+    border-radius: 5px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    
+}
+h2{
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+}
+.inputg{
+    position: relative;
+    width: 250px;
+    margin-top: 30px;  
+}
+.input-text{
+    color: #ffffff;
+    position: relative;
+    width: 100%;
+    padding: 15px 10px 10px;
+    background: transparent;
+}
+.button{
+    /*position: relative;*/
+    justify-content: center;
+    align-items: center;
+    /*width: 150px;*/
+    margin-top: 30px;
+    padding: 10px 10px 10px;
+    background-color: blueviolet;
+    color: #ffffff;
+}
+.button:hover{
+    background-color: #fd0000;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.fotter{
+    margin-top: 20px;
+    color: #ffffff;
+    display: flex;
+    margin-left: -30%;
+    margin-right: -25%;
+    margin-top: 30%;
+    justify-content: space-between ;
+}
+
+
